@@ -46,6 +46,15 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas:
+        "A A A A A A A B B B B B B B"
+        "A A A A A A A B B B B B B B"
+        "A A A A A A A B B B B B B B";
+    }
+
+    .item6 {
+      grid-column: A-start / B-end;
+      grid-row-end: A-end;
     }
   </style>
 </body>
